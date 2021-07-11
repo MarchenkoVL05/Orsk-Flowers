@@ -1,26 +1,23 @@
-function Drawer() {
+function Drawer({ onClose, items = [] }) {
     return (
-      <div style={{display: 'none'}} className="overlay">
+      <div className="overlay">
         <div className="drawer">
-          <h2 className="mb-30 d-flex justify-between">Корзина <img className="removeBtn cu-p" src="/content/btn-remove.svg" alt="btn-remove"/></h2>
+          <h2 className="mb-30 d-flex justify-between">Корзина <img onClick={onClose} className="removeBtn cu-p" src="/content/btn-remove.svg" alt="close"/></h2>
 
           <div className="items">
-            <div className="cartItem d-flex justify-between align-center mb-20">
-              <img width={70} height={70} className="cardItemImg" src="/content/cards/boucket-orchid.jpg" alt="orchid"/>
-              <div className="mr-20">
-                <p className="mb-5">Букет «Орхи»</p>
-                <b>3 460р.</b>
+          {items.map((obj) => (
+            <div className="cartItem d-flex align-center mb-20">
+              <div
+                style={{ backgroundImage: `url(${obj.imageUrl})` }}
+                className="cartItemImg"></div>
+
+              <div className="mr-20 flex">
+                <p className="mb-5">{obj.title}</p>
+                <b>{obj.price} руб.</b>
               </div>
-              <img className="removeBtn" src="/content/btn-remove.svg" alt="btn-remove"/>
+              <img className= "removeBtn" src="/content/btn-remove.svg" alt="Remove" />
             </div>
-            <div className="cartItem d-flex justify-between align-center mb-20">
-            <img width={70} height={70} className="cardItemImg" src="/content/cards/eleven-white-roses.jpg" alt="11 roses"/>
-              <div className="mr-20">
-                <p className="mb-5">11 белых роз</p>
-                <b>1 860р.</b>
-              </div>
-              <img className="removeBtn" src="/content/btn-remove.svg" alt="btn-remove"/>
-            </div>
+          ))}
           </div>
 
           <div className="cartTotalBlock">
