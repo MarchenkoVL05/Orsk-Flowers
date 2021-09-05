@@ -15,14 +15,15 @@ import ContentLoader from 'react-content-loader';
   
   const [isAdded, setIsAdded] = React.useState(false);
   const [isFavorite, setIsFavorite] = React.useState(favorited);
+  const obj = { id, parentId: id, title, imageUrl, price };
 
   const onClickPlus = () => {
-    onPlus({ title, imageUrl, price });
+    onPlus(obj);
     setIsAdded(!isAdded);
   };
 
   const onClickFavorite = () => {
-    onFavorite({ id, title, imageUrl, price });
+    onFavorite(obj);
     setIsFavorite(!isFavorite);
   };
 
@@ -44,9 +45,11 @@ import ContentLoader from 'react-content-loader';
             </ContentLoader>
           ) : (
             <>
+              {onFavorite && (
               <div className={styles.favorite} onClick={onClickFavorite}>
-                <img src={isFavorite ? '/content/liked.svg' : '/content/unliked.svg'} alt="Unliked" />
+                <img src={isFavorite ? 'content/liked.svg' : 'content/unliked.svg'} alt="Unliked" />
               </div>
+              )}
               <img width="100%" height={135} src={imageUrl} alt="Sneakers" />
               <h5>{title}</h5>
               <div className="d-flex justify-between align-center">
@@ -54,12 +57,14 @@ import ContentLoader from 'react-content-loader';
                   <span>Цена:</span>
                   <b>{price} руб.</b>
                 </div>
-                <img
+                {onPlus && (
+                  <img
                   className={styles.plus}
                   onClick={onClickPlus}
                   src={isAdded ? '/content/checked.svg' : '/content/unchecked.svg'}
                   alt="Checked"
                 />
+                )}
               </div>
             </>
           )}
