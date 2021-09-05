@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Orsk-Flowers/static/css/main.a22f48a4.chunk.css",
-    "main.js": "/Orsk-Flowers/static/js/main.ca390f01.chunk.js",
-    "main.js.map": "/Orsk-Flowers/static/js/main.ca390f01.chunk.js.map",
+    "main.js": "/Orsk-Flowers/static/js/main.246d79c6.chunk.js",
+    "main.js.map": "/Orsk-Flowers/static/js/main.246d79c6.chunk.js.map",
     "runtime-main.js": "/Orsk-Flowers/static/js/runtime-main.8d3260ae.js",
     "runtime-main.js.map": "/Orsk-Flowers/static/js/runtime-main.8d3260ae.js.map",
     "static/css/2.caa02cb8.chunk.css": "/Orsk-Flowers/static/css/2.caa02cb8.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.caa02cb8.chunk.css",
     "static/js/2.074a916d.chunk.js",
     "static/css/main.a22f48a4.chunk.css",
-    "static/js/main.ca390f01.chunk.js"
+    "static/js/main.246d79c6.chunk.js"
   ]
 }
