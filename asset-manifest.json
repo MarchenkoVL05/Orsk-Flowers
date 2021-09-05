@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Orsk-Flowers/static/css/main.a22f48a4.chunk.css",
+    "main.js": "/Orsk-Flowers/static/js/main.459fc430.chunk.js",
+    "main.js.map": "/Orsk-Flowers/static/js/main.459fc430.chunk.js.map",
+    "runtime-main.js": "/Orsk-Flowers/static/js/runtime-main.8d3260ae.js",
+    "runtime-main.js.map": "/Orsk-Flowers/static/js/runtime-main.8d3260ae.js.map",
+    "static/css/2.caa02cb8.chunk.css": "/Orsk-Flowers/static/css/2.caa02cb8.chunk.css",
+    "static/js/2.074a916d.chunk.js": "/Orsk-Flowers/static/js/2.074a916d.chunk.js",
+    "static/js/2.074a916d.chunk.js.map": "/Orsk-Flowers/static/js/2.074a916d.chunk.js.map",
+    "index.html": "/Orsk-Flowers/index.html",
+    "static/css/2.caa02cb8.chunk.css.map": "/Orsk-Flowers/static/css/2.caa02cb8.chunk.css.map",
+    "static/css/main.a22f48a4.chunk.css.map": "/Orsk-Flowers/static/css/main.a22f48a4.chunk.css.map",
+    "static/js/2.074a916d.chunk.js.LICENSE.txt": "/Orsk-Flowers/static/js/2.074a916d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8d3260ae.js",
+    "static/css/2.caa02cb8.chunk.css",
+    "static/js/2.074a916d.chunk.js",
+    "static/css/main.a22f48a4.chunk.css",
+    "static/js/main.459fc430.chunk.js"
+  ]
+}
